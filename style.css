@@ -1,0 +1,130 @@
+@font-face { font-family: rude slab wide; src: url('assets/fonts/rude-slab-wide-black.woff.ttf'); } 
+@font-face { font-family: rude slab wide; font-weight: bold; src: url('../rockrack/assets/fonts/rude-slab-wide-black.woff.ttf');}
+
+.navbar .navbar-brand span{
+    font-family: rude slab wide;
+    font-size: 65%;
+ 
+}
+.navbar .navbar-brand .text2{
+    color: red;
+   
+}
+.navbar .navbar-brand .text1{
+    color: lightgrey;
+}
+
+#navbarNav .social ul li i{
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+    line-height: 35px;
+    border-radius: 50px;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    background-color: #cac5c542;
+    transition: all 0.3s ease-in-out;
+    color: black;
+}
+
+.logo1{
+   max-width: 100px;
+}
+
+@media only screen and (max-width: 501px){
+    .navbar .navbar-brand span{
+        font-size: 55%;
+    }
+    .navbar .navbar-brand img {
+        max-width: 75px;
+    }
+}
+
+@media only screen and (max-width: 393px){
+    .navbar .navbar-brand span{
+        font-size: 49%;
+    }
+    .navbar .navbar-brand img {
+        max-width: 73px;
+    }
+}
+
+/* slider */
+/* vehicle */
+.vehicles {
+    background: url() no-repeat top;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding-top: 3rem;
+  }
+.vehicles .vehicles-slider{
+    padding-bottom: 1.5rem;
+}
+
+.vehicles .vehicles-slider .box{
+    text-align: center;
+}
+
+.vehicles .vehicles-slider .box img{
+    width:100%;
+    transform: scale(.8);
+    opacity: .5;
+}
+
+.vehicles .vehicles-slider .box .content{
+    padding-top: 1rem;
+    transform: scale(0);
+}
+
+.vehicles .vehicles-slider .swiper-slide-active .content{
+    transform: scale(1);
+}
+
+.vehicles .vehicles-slider .swiper-slide-active img{
+    transform: scale(1);    
+    opacity: 1;
+}
+
+.vehicles .vehicles-slider .box .content h3{
+    font-size: 2.5rem;
+    color:var(--black);
+}
+
+.vehicles .vehicles-slider .box .content .price{
+    font-size: 2.2rem;
+    color:red;
+    /* padding:1rem 0; */
+    font-weight: bolder;
+}
+
+.vehicles .vehicles-slider .box .content .price span{
+    color:var(--light-color);
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.vehicles .vehicles-slider .box .content p{
+    font-size: 1.6rem;
+    color:black;
+    /* padding: 1rem 0;
+    padding-top: 1.5rem; */
+    border-top: var(--border);
+    padding-bottom: 1rem;
+}
+
+.vehicles .vehicles-slider .box .content span{
+    font-size: 1rem;
+    color:var(--yellow);
+    padding:0 .5rem;
+}
+
+.swiper-pagination-bullet-active{
+    background: var(--yellow);
+}
+
